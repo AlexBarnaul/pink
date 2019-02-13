@@ -1,0 +1,23 @@
+@media (min-width:320px) {
+
+	.toggles {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.toggles__label .toggles__bullet {
+		width: 6px;
+		height: 6px;
+		background: #bec3c7;
+		border: 3px solid #fff;
+		display: block;
+		border-radius: 50%;
+	}
+
+	.toggles__radio-btn:checked + .toggles__bullet {
+		border: 3px solid #283645;
+	}
+
+}

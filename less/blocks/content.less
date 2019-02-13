@@ -1,0 +1,27 @@
+@media (min-width:320px) {
+
+	.content {
+		position: relative;
+		z-index: 1;
+		&::before {
+			content: "";
+			background-color: #2c3949;
+			width: 100%;
+			top: -67px;
+			height: 733px;
+			position: absolute;
+			background-image:url("../img/back-tablet.jpg");
+			background-repeat: no-repeat;
+			background-size:1200px 729px;
+			background-position: center 0;
+			z-index: -1;
+		}
+	}
+}
+
+
+@media (min-width:370px) {
+	
+	.content::before {
+	}
+}
