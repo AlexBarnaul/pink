@@ -154,6 +154,9 @@
 		<div class="wrapper-center">
 			<section class="tariff">
 				<div class="tariff__inner">
+					<input type="radio" name="review" id="tariff-btn-1" class="visually-hidden">
+					<input type="radio" name="review" id="tariff-btn-2" class="visually-hidden" checked>
+					<input type="radio" name="review" id="tariff-btn-3" class="visually-hidden">
 					<table class="tariff__table">
 						<tr class="tariff__table-row">
 							<th class="tariff__table-header"></th>
@@ -189,18 +192,13 @@
 							<td class="tariff__table-cell tariff__feature-commentaries"></td>
 						</tr>
 					</table>
+					<!--					TOGGLES LABEL BOX-->
 					<div class="toggles tariff__toggles">
-						<label class="toggles__label">
-							<input type="radio" name="review" id="btn-1" class="toggles__radio-btn visually-hidden">
-							<span class="toggles__bullet"></span>
+						<label for="tariff-btn-1" class="toggles__bullet">
 						</label>
-						<label class="toggles__label">
-							<input type="radio" name="review" id="btn-2" class="toggles__radio-btn visually-hidden" checked>
-							<span class="toggles__bullet"></span>
+						<label for="tariff-btn-2" class="toggles__bullet">
 						</label>
-						<label class="toggles__label">
-							<input type="radio" name="review" id="btn-3" class="toggles__radio-btn visually-hidden">
-							<span class="toggles__bullet"></span>
+						<label for="tariff-btn-3" class="toggles__bullet">
 						</label>
 					</div>
 				</div>

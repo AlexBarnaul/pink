@@ -7,7 +7,7 @@
 		align-items: center;
 	}
 
-	.toggles__label .toggles__bullet {
+	.toggles__bullet {
 		width: 6px;
 		height: 6px;
 		background: #bec3c7;
@@ -16,8 +16,22 @@
 		border-radius: 50%;
 	}
 
-	.toggles__radio-btn:checked + .toggles__bullet {
+	#tariff-btn-1:checked ~ .tariff__toggles .toggles__bullet[for="tariff-btn-1"],
+	#tariff-btn-2:checked ~ .tariff__toggles .toggles__bullet[for="tariff-btn-2"],
+	#tariff-btn-3:checked ~ .tariff__toggles .toggles__bullet[for="tariff-btn-3"] {
 		border: 3px solid #283645;
+	}
+
+	#tariff-btn-1:checked ~ .tariff__table {
+		transform: translateX(277px);
+	}
+
+	#tariff-btn-2:checked ~ .tariff__table {
+		transform: translateX(0px);
+	}
+
+	#tariff-btn-3:checked ~ .tariff__table {
+		transform: translateX(-277px);
 	}
 
 }
