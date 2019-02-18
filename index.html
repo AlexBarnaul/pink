@@ -87,7 +87,7 @@
 							<img src="img/iphone-5-in-hand-png.png" srcset="img/iphone-5-in-hand-png@2x.png 2x" alt="iphone in hand" class="intro__iphone-img">
 						</picture>
 						<picture>
-							<img src="img/Layer_155.jpg" srcset="img/layer_155@2x.jpg 2x" alt="iphone screen" class="intro__screen-img">
+							<img src="img/screen-bg.jpg" srcset="img/screen-bg@2x.jpg 2x" alt="iphone screen" class="intro__screen-img">
 						</picture>
 					</div>
 					<div class="intro__container">
@@ -158,26 +158,34 @@
 			<!--			REVIEWS-->
 			<section class="reviews">
 				<div class="reviews__inner">
-					<button type="button" class="reviews__toggle reviews__toggle--previous"></button>
-					<div class="reviews__container">
+					<input checked class="reviews__radio" type="radio" id="reviews-btn-1" name="reviews">
+					<input class="reviews__radio" type="radio" id="reviews-btn-2" name="reviews">
+					<input class="reviews__radio" type="radio" id="reviews-btn-3" name="reviews">
+					<button type="button" class="reviews__switcher reviews__switcher--prev"></button>
+					<!--					REVIEWEWS CONTAINERS-->
+					<div class="reviews__container reviews__container--1">
 						<p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть напривычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
 						<span class="reviews__author-name">Николай Петров</span>
 						<span class="reviews__author-about">25 лет, водитель трамвая</span>
 					</div>
-					<button type="button" class="reviews__toggle reviews__toggle--next"></button>
-					<!--					REVIEWS toggles-->
+					<div class="reviews__container reviews__container--2">
+						<p class="reviews__text">«Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est officiis harum in numquam atque facilis deserunt dolorum nulla optio ipsam.»</p>
+						<span class="reviews__author-name">Johny Cowboy</span>
+						<span class="reviews__author-about">21 years old, farmer</span>
+					</div>
+					<div class="reviews__container reviews__container--3">
+						<p class="reviews__text">«Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ullam laboriosam dolor cum vel saepe, quibusdam eos soluta distinctio odio rem quia, at ex repellat asperiores ipsa hic a»</p>
+						<span class="reviews__author-name">Cortney Skirth</span>
+						<span class="reviews__author-about">30 лет, photographer</span>
+					</div>
+					<button type="button" class="reviews__switcher reviews__switcher--next"></button>
+					<!--					TOGGLES REVIEW LABEL BOX-->
 					<div class="toggles reviews__toggles">
-						<label class="toggles__label">
-							<input type="radio" name="review" id="btn-1" class="toggles__radio-btn visually-hidden" checked>
-							<span class="toggles__bullet"></span>
+						<label for="reviews-btn-1" class="toggles__bullet">
 						</label>
-						<label class="toggles__label">
-							<input type="radio" name="review" id="btn-2" class="toggles__radio-btn visually-hidden">
-							<span class="toggles__bullet"></span>
+						<label for="reviews-btn-2" class="toggles__bullet">
 						</label>
-						<label class="toggles__label">
-							<input type="radio" name="review" id="btn-3" class="toggles__radio-btn visually-hidden">
-							<span class="toggles__bullet"></span>
+						<label for="reviews-btn-3" class="toggles__bullet">
 						</label>
 					</div>
 				</div>
@@ -187,9 +195,9 @@
 		<div class="wrapper-center">
 			<section class="tariff">
 				<div class="tariff__inner">
-					<input type="radio" name="review" id="tariff-btn-1" class="visually-hidden">
-					<input type="radio" name="review" id="tariff-btn-2" class="visually-hidden" checked>
-					<input type="radio" name="review" id="tariff-btn-3" class="visually-hidden">
+					<input class="tariff__radio" type="radio" name="tariff" id="tariff-btn-1">
+					<input class="tariff__radio" type="radio" name="tariff" id="tariff-btn-2" checked>
+					<input class="tariff__radio" type="radio" name="tariff" id="tariff-btn-3">
 					<table class="tariff__table">
 						<tr class="tariff__table-row">
 							<th class="tariff__table-header"></th>
@@ -225,7 +233,7 @@
 							<td class="tariff__table-cell tariff__feature-commentaries"></td>
 						</tr>
 					</table>
-					<!--					TOGGLES LABEL BOX-->
+					<!--					TOGGLES TARIFF LABEL BOX-->
 					<div class="toggles tariff__toggles">
 						<label for="tariff-btn-1" class="toggles__bullet">
 						</label>
@@ -263,7 +271,7 @@
 		<!--		map-->
 		<article class="map">
 			<div class="map__container">
-				<img src="../img/triangle.svg" alt="triangle" class="map__img-triangle">
+				<img src="../img/triangle-footer.svg" alt="triangle" class="map__img-triangle">
 			</div>
 		</article>
 		<!--		socials-->

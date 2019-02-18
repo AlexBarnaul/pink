@@ -16,6 +16,21 @@
 		border-radius: 50%;
 	}
 
+	//	REVIEWS SLIDER
+	#reviews-btn-1:checked ~ .reviews__toggles .toggles__bullet[for="reviews-btn-1"],
+	#reviews-btn-3:checked ~ .reviews__toggles .toggles__bullet[for="reviews-btn-3"],
+	#reviews-btn-2:checked ~ .reviews__toggles .toggles__bullet[for="reviews-btn-2"] {
+		border: 3px solid #283645;
+	}
+
+	#reviews-btn-1:checked ~ .reviews__container--1,
+	#reviews-btn-2:checked ~ .reviews__container--2,
+	#reviews-btn-3:checked ~ .reviews__container--3 {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	//TARIFF SLIDER
 	#tariff-btn-1:checked ~ .tariff__toggles .toggles__bullet[for="tariff-btn-1"],
 	#tariff-btn-2:checked ~ .tariff__toggles .toggles__bullet[for="tariff-btn-2"],
 	#tariff-btn-3:checked ~ .tariff__toggles .toggles__bullet[for="tariff-btn-3"] {
