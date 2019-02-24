@@ -217,10 +217,46 @@
     background-position: center 0;
     z-index: -1;
   }
+  .content--photo::before {
+    height: 304px;
+  }
 }
 @media (min-width: 320px) {
+  .title {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 24px;
+    font-family: "Open Sans";
+    text-align: center;
+  }
   .title--index {
     display: none;
+  }
+  .title--photo {
+    margin: 0 auto;
+    width: 168px;
+    padding-top: 98px;
+  }
+}
+@media (min-width: 320px) {
+  .subtitle {
+    margin: 0;
+    padding: 0;
+    color: #283645;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+  }
+  .subtitle--photo {
+    margin-top: 130px;
+    padding: 0 34px 49px;
+  }
+  .subtitle--photo-bottom {
+    margin-top: 45px;
   }
 }
 @media (min-width: 320px) {
@@ -329,6 +365,55 @@
 @media (min-width: 320px) {
   .cloaks {
     display: none;
+  }
+}
+@media (min-width: 320px) {
+  .gallery__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    max-width: 360px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .gallery__item {
+    padding-top: 21px;
+  }
+  .gallery__img-container {
+    margin: 0 auto;
+    width: 280px;
+  }
+  .gallery__img {
+    display: block;
+  }
+}
+@media (min-width: 320px) {
+  .panorama {
+    padding: 0;
+    margin: 0;
+  }
+  .panorama__photo-container {
+    width: 320px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+  }
+  .panorama__photo-container::before {
+    content: "панорама дня";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 140px;
+    height: 36px;
+    background-color: #d22856;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    font-size: 12px;
+  }
+  .panorama__img {
+    display: block;
   }
 }
 @media (min-width: 320px) {
@@ -532,6 +617,72 @@
   }
   #tariff-btn-3:checked ~ .tariff__table {
     transform: translateX(-277px);
+  }
+}
+@media (min-width: 320px) {
+  .like {
+    padding: 0 20px;
+    order: 1;
+    margin-bottom: 19px;
+  }
+  .like__icon {
+    fill: #d22856;
+    padding-right: 12px;
+  }
+  .like__text,
+  .like__counter {
+    width: 88px;
+    height: 9px;
+    color: #d22856;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+}
+@media (min-width: 320px) {
+  .subscription {
+    box-sizing: border-box;
+    padding: 0 20px;
+    background-color: #f2f2f2;
+    background-clip: content-box;
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .subscription__container {
+    padding: 18px 20px 0;
+    order: -1;
+  }
+  .subscription__author {
+    font-family: "opensans", "Arial", sans-serif;
+    font-weight: 700;
+    color: #283645;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .subscription__time {
+    font-family: "opensans", "Arial", sans-serif;
+    font-weight: 300;
+    color: #283645;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  .subscription__text {
+    padding: 0px 13px 0 20px;
+    margin: 0;
+    margin-bottom: 9px;
+    font-family: "opensans", "Arial", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+    color: #283645;
+    order: 0;
   }
 }
 @media (min-width: 320px) {
