@@ -1,0 +1,50 @@
+@media(min-width:320px) {
+	.upload {
+		padding: 0;
+		margin: 0;
+	}
+
+	.upload__inner {
+		padding: 20px 20px 0px;
+		background-color: #f2f2f2;
+	}
+
+	.upload__img-container {
+		margin: 0 auto;
+	}
+
+	.upload__img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.upload__list {
+		display: none;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.upload__icons-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.upload__icon-crop {
+		width: 44px;
+		height: 44px;
+		fill: #b5babe;
+		cursor: pointer;
+	}
+
+	.upload__checkbox {
+		display: none;
+	}
+
+	.upload__checkbox--crop:checked ~ .upload__label--crop .upload__icon-crop {
+		fill: #d22856;
+	}
+
+}

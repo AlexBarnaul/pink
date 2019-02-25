@@ -268,7 +268,7 @@
 			<section class="upload">
 				<div class="upload__inner">
 					<div class="upload__img-container">
-						<img src="" alt="" class="upload__img">
+						<img src="img/photo-7-mobile.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="photo editor" class="upload__img">
 					</div>
 					<!--				scales-->
 					<div class="upload__settings">
@@ -291,7 +291,15 @@
 						<div class="upload__scales--mobile">
 							<div class="upload__icons-container">
 								<ul class="upload__icons-list">
-									<li class="upload__icons-item"></li>
+									<li class="upload__icons-item">
+										<input class="upload__checkbox upload__checkbox--crop" type="checkbox" name="crop" id="upload-crop" checked>
+										<label class="upload__label upload__label--crop" for="upload-crop">
+											<svg class="upload__icon-crop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+												<path d="M0 0h48v48H0V0z" fill="none" />
+												<path d="M34 30h4V14c0-2.2-1.8-4-4-4H18v4h16v16zm-20 4V2h-4v8H2v4h8v20c0 2.2 1.8 4 4 4h20v8h4v-8h8v-4H14z" />
+											</svg>
+										</label>
+									</li>
 									<li class="upload__icons-item"></li>
 									<li class="upload__icons-item"></li>
 								</ul>
