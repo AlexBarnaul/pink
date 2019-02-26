@@ -4,6 +4,14 @@
 		margin: 0;
 	}
 
+	.upload__settings {
+		box-sizing: border-box;
+		margin: 0 auto;
+		width: 280px;
+		padding-bottom: 41px;
+		margin-bottom: 41px;
+	}
+
 	.upload__inner {
 		padding: 20px 20px 0px;
 		background-color: #f2f2f2;
@@ -11,6 +19,8 @@
 
 	.upload__img-container {
 		margin: 0 auto;
+		max-width: 280px;
+		margin-bottom: 21px;
 	}
 
 	.upload__img {
@@ -19,17 +29,16 @@
 		height: auto;
 	}
 
-	.upload__list {
-		display: none;
+	.upload__settings-list {
+		padding: 20px 20px 110px;
+		margin: 0 auto;
 		list-style: none;
-		padding: 0;
-		margin: 0;
-	}
-
-	.upload__icons-list {
-		list-style: none;
-		padding: 0;
-		margin: 0;
+		display: flex;
+		justify-content: space-around;
+		position: relative;
+		align-items: center;
+		box-sizing: border-box;
+		width: 280px;
 	}
 
 	.upload__icon-crop {
@@ -39,12 +48,73 @@
 		cursor: pointer;
 	}
 
-	.upload__checkbox {
+	.upload__icon-fill {
+		width: 48px;
+		height: 43px;
+		fill: #b5babe;
+		cursor: pointer;
+	}
+
+	.upload__icon-contrast {
+		width: 32px;
+		height: 32px;
+		fill: #b5babe;
+		cursor: pointer;
+	}
+
+	.upload__radio {
 		display: none;
 	}
 
-	.upload__checkbox--crop:checked ~ .upload__label--crop .upload__icon-crop {
+	.upload__radio--crop:checked ~ .upload__label--crop .upload__icon-crop,
+	.upload__radio--fill:checked ~ .upload__label--fill .upload__icon-fill,
+	.upload__radio--contrast:checked ~ .upload__label--contrast .upload__icon-contrast {
 		fill: #d22856;
+	}
+
+	.upload__scales-bar--crop {
+		display: block;
+		width: 240px;
+		height: 2px;
+		background-color: #283645;
+		margin: 0px auto;
+		position: absolute;
+		bottom: 70px;
+		left: 18px;
+		cursor: pointer;
+
+		&::before {
+			position: absolute;
+			width: 14px;
+			height: 14px;
+			content: "";
+			border-radius: 50%;
+			border: 2px solid #d22856;
+			background-color: #fff;
+			box-sizing: border-box;
+			right: 33px;
+			top: -6px;
+			cursor: pointer;
+		}
+	}
+
+	.upload__submit,
+	.upload__reset {
+		width: 280px;
+		height: 55px;
+		border: 3px solid #d22856;
+		color: #d22856;
+		font-size: 18px;
+	}
+
+	.upload__submit {
+		margin-bottom: 12px;
+	}
+
+	.upload__reset:disabled {
+		border: 3px solid #283645;
+		color: #283645;
+		opacity: 0.1;
 	}
 
 }

@@ -1,1 +1,42 @@
-@media(min-width:320px) {}
+@media(min-width:320px) {
+	.socials {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.socials__link {
+		display: block;
+		border-radius: 50%;
+		border: 3px solid #eaebec;
+		width: 45px;
+		height: 45px;
+		background-color: #fff;
+		line-height: 45px;
+		text-align: center;
+	}
+
+	.socials__icon {
+		fill: #d22856;
+		vertical-align: middle;
+		text-align: center;
+
+		&--twitter {
+			width: 18px;
+			height: 14px;
+		}
+
+		&--fb {
+			width: 9px;
+			height: 18px;
+		}
+
+		&--youtube {
+			width: 15px;
+			height: 13px;
+		}
+	}
+}
