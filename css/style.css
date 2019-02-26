@@ -217,7 +217,8 @@
     background-position: center 0;
     z-index: -1;
   }
-  .content--photo::before {
+  .content--photo::before,
+  .content--form::before {
     height: 304px;
   }
 }
@@ -239,6 +240,11 @@
     width: 168px;
     padding-top: 98px;
   }
+  .title--form {
+    padding-top: 98px;
+    width: 240px;
+    margin: 0 auto;
+  }
 }
 @media (min-width: 320px) {
   .subtitle {
@@ -258,6 +264,14 @@
   .subtitle--photo-bottom {
     margin-top: 45px;
     padding-bottom: 41px;
+  }
+  .subtitle--form {
+    margin-top: 58px;
+    padding: 45px 20px 34px;
+    background-color: #fff;
+  }
+  .subtitle--form span {
+    display: none;
   }
 }
 @media (min-width: 320px) {
@@ -744,6 +758,77 @@
     font-weight: 400;
     line-height: 24px;
     text-transform: uppercase;
+  }
+}
+@media (min-width: 320px) {
+  .form__flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .form__fieldset {
+    padding: 41px 22px 44px;
+    margin: 0;
+    border: none;
+    position: relative;
+  }
+  .form__title {
+    color: #d22856;
+    font-family: "opensans", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+  }
+  .form__name {
+    border: none;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 44px;
+  }
+  .form__name-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .form__name-item {
+    padding: 0 22px;
+    margin: 0;
+  }
+  .form__name-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .form__name-text {
+    display: block;
+    color: #d22856;
+    font-family: "opensans", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-left: 21px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+  }
+  .form__apps {
+    background-color: #f2f2f2;
+  }
+}
+@media (min-width: 320px) {
+  .input-text {
+    height: 63px;
+    margin-bottom: 17px;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+    padding: 22px 20px 18px 20px;
+    color: #283645;
+    font-family: "opensans", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
   }
 }
 @media (min-width: 320px) {
