@@ -123,6 +123,28 @@
     color: #d22856;
   }
 }
+@media (min-width: 660px) {
+  .navigation__item:first-child {
+    height: 110px;
+  }
+  .header__pink-logo-tablet {
+    width: 147px;
+    height: 40px;
+    fill: #fff;
+    position: absolute;
+    top: 27px;
+    left: 20px;
+  }
+  .navigation__logo-mobile {
+    display: none;
+  }
+  .navigation__img-toggle {
+    top: 43px;
+  }
+  .navigation__item:not(:first-child) {
+    transform: translateY(-370px);
+  }
+}
 @media (min-width: 320px) {
   .features__inner {
     min-width: 320px;
@@ -222,6 +244,14 @@
     height: 304px;
   }
 }
+@media (min-width: 660px) {
+  .content::before {
+    background-position: center 68px;
+  }
+  .content--form::before {
+    height: 506px;
+  }
+}
 @media (min-width: 320px) {
   .title {
     margin: 0;
@@ -246,9 +276,28 @@
     margin: 0 auto;
   }
 }
+@media (min-width: 660px) {
+  .title {
+    font-family: "opensans", "Arial", sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+  }
+  .title--index {
+    display: none;
+  }
+  .title--photo {
+    margin: 0 auto;
+    width: 168px;
+    padding-top: 98px;
+  }
+  .title--form {
+    padding-top: 186px;
+    width: 510px;
+  }
+}
 @media (min-width: 320px) {
   .subtitle {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     color: #283645;
     font-family: "Open Sans";
@@ -272,6 +321,38 @@
   }
   .subtitle--form span {
     display: none;
+  }
+}
+/*-------------------------------------------------------------------
+TABLET*/
+@media (min-width: 660px) {
+  .subtitle {
+    margin: 0 auto;
+    padding: 0;
+    color: #283645;
+    font-family: "Open Sans";
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .subtitle--photo {
+    margin-top: 130px;
+    padding: 0 34px 49px;
+  }
+  .subtitle--photo-bottom {
+    margin-top: 45px;
+    padding-bottom: 41px;
+  }
+  .subtitle--form {
+    margin-top: 130px;
+    padding: 45px 20px 34px;
+    background-color: #fff;
+    width: 500px;
+    margin-bottom: 37px;
+  }
+  .subtitle--form span {
+    display: inline;
   }
 }
 @media (min-width: 320px) {
@@ -992,6 +1073,107 @@
     color: #d22856;
   }
 }
+/*------------------------------------------------------------- TABLET*/
+@media (min-width: 660px) {
+  .form__fieldset {
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+    width: 620px;
+    margin: 0 auto;
+  }
+  .form__title {
+    line-height: 30px;
+    position: relative;
+    top: -43px;
+    background-color: #fff;
+    left: 0;
+  }
+  .form__title--apps {
+    width: 370px;
+    margin-bottom: 0;
+  }
+  .form__title--contacts {
+    display: block;
+    top: -30px;
+    width: 275px;
+  }
+  .form__name {
+    padding-bottom: 30px;
+  }
+  .form__name-item {
+    margin-bottom: 35px;
+  }
+  .form__name-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .form__name-text {
+    padding-left: 0;
+    padding-top: 18px;
+    padding-right: 16px;
+  }
+  .form__apps {
+    order: 1;
+    padding-top: 27px;
+    margin-bottom: 66px;
+    padding-bottom: 56px;
+  }
+  .form__apps-list {
+    width: 100%;
+    margin: 0;
+  }
+  .form__apps-text {
+    padding-left: 95px;
+  }
+  .form__apps-text::before {
+    left: 34px;
+    top: -6px;
+  }
+  .form__contacts {
+    order: 2;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 14px;
+    padding-bottom: 50px;
+  }
+  .form__contacts-item {
+    margin-bottom: 52px;
+  }
+  .form__icon-phone::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #e5e5e5;
+    position: absolute;
+    right: 0;
+    top: -24px;
+    display: block;
+    background-image: url(../img/phone.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .form__icon-mail::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #e5e5e5;
+    position: absolute;
+    right: 0;
+    top: -24px;
+    display: block;
+    background-image: url(../img/mail.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .form__achieves {
+    order: 3;
+  }
+  .form__contacts-text {
+    top: 48px;
+  }
+}
 @media (min-width: 320px) {
   .input-text {
     height: 63px;
@@ -1202,7 +1384,7 @@
     position: relative;
     padding-bottom: 23px;
   }
-  .footer__logo-glasses {
+  .logo-glasses {
     fill: #d22856;
   }
   .footer__developer-link {
