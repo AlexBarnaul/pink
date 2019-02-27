@@ -1,0 +1,16 @@
+@media(min-width:320px) {
+	.input-checkbox {
+		display: none;
+	}
+
+	.input-checkbox[name="selfie"]:checked + .form__achieves-text::before,
+	.input-checkbox[name="chuck"]:checked + .form__achieves-text::before,
+	.input-checkbox[name="tower"]:checked + .form__achieves-text::before,
+	.input-checkbox[name="beach"]:checked + .form__achieves-text::before,
+	.input-checkbox[name="suvenir"]:checked + .form__achieves-text::before,
+	.input-checkbox[name="hotel"]:checked + .form__achieves-text::before {
+		background-image: url("../img/tick.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+}

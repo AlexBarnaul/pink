@@ -1,0 +1,11 @@
+@media(min-width:320px) {
+	.input-radio {
+		display: none;
+	}
+
+	.input-radio[id="ios"]:checked + .form__apps-text::before,
+	.input-radio[id="android"]:checked + .form__apps-text::before,
+	.input-radio[id="windows"]:checked + .form__apps-text::before {
+		background-color: #d22856;
+	}
+}
