@@ -30,3 +30,24 @@
 		display: block;
 	}
 }
+
+//----------------------------------------------------------
+//TABLET
+@media(min-width:660px) {
+	.panorama__photo-container {
+		width: 100%;
+		overflow: hidden;
+
+		&::before {
+			top: 57px;
+			color: #fff;
+			font-weight: 700;
+		}
+	}
+
+	.panorama__img {
+		//		margin: 0 auto;
+		width: 100%;
+		height: auto;
+	}
+}

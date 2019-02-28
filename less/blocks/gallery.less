@@ -21,3 +21,30 @@
 		display: block;
 	}
 }
+
+//-------------------------------------
+//TABLET
+
+@media(min-width:660px) {
+	.gallery__list {
+		max-width: none;
+		width: 100%;
+		padding: 0 20px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-top: 16px;
+	}
+
+	.gallery__img-container {
+		width: 100%;
+	}
+
+	.gallery__item {
+		flex-basis: 300px;
+		padding-top: 0px;
+		margin-bottom: 20px;
+	}
+
+}

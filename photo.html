@@ -57,6 +57,9 @@
 				<ul class="navigation__list">
 					<li class="navigation__item">
 						<a href="index.html" class="navigation__link navigation__link--top">
+							<svg class="header__pink-logo-tablet">
+								<use xlink:href="#logotype-blue-tablet"></use>
+							</svg>
 							<svg width="75px" height="22px" class="navigation__logo-mobile">
 								<use xlink:href="#logo-mobile"></use>
 							</svg>
@@ -81,9 +84,10 @@
 			</div>
 		</nav>
 	</header>
+
 	<!--		CONTENT-->
 	<!--INTRO-->
-	<main class="content content--photo">
+	<main class="content content--photo content--form">
 		<div class="wrapper-center">
 			<h1 class="title title--photo">Фотографии пользователей</h1>
 			<h2 class="subtitle subtitle--photo">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
@@ -94,23 +98,23 @@
 				<div class="panorama__photo-container">
 					<picture>
 						<source srcset="">
-						<source srcset="">
+						<source media="(min-width:660px)" srcset="img/panorama-tablet.jpg, img/panorama-tablet@2x.jpg 2x">
 						<img src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="panorama of the day" class="panorama__img">
 					</picture>
 				</div>
-				<div class="subscription">
-					<div class="subscription__container">
-						<span class="subscription__author">Анна</span>
-						<span class="subscription__time">(5 минут назад)</span>
+				<div class="subscription subscription--panorama">
+					<div class="subscription__container subscription__container--panorama">
+						<span class="subscription__author subscription__author--panorama">Анна</span>
+						<span class="subscription__time subscription__time--panorama">(5 минут назад)</span>
 					</div>
-					<div class="like">
-						<svg class="like__icon" width="13px" height="12px">
+					<div class="like like--panorama">
+						<svg class="like__icon like__icon--panorama" width="13px" height="12px">
 							<use xlink:href="#icon-heart"></use>
 						</svg>
-						<span class="like__text">Нравится:</span>
-						<span class="like__counter">215</span>
+						<span class="like__text like__text--panorama">Нравится:</span>
+						<span class="like__counter like__counter--panorama">215</span>
 					</div>
-					<p class="subscription__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+					<p class="subscription__text subscription__text--panorama">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
 				</div>
 			</article>
 		</div>
@@ -122,7 +126,7 @@
 					<li class="gallery__item">
 						<div class="gallery__img-container">
 							<picture>
-								<source>
+								<source media="(min-width:660px)" srcset="img/photo-1-tablet.jpg, img/photo-1-tablet@2x.jpg 2x">
 								<img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="picture of user" class="gallery__img">
 							</picture>
 						</div>
@@ -145,7 +149,7 @@
 					<li class="gallery__item">
 						<div class="gallery__img-container">
 							<picture>
-								<source>
+								<source media="(min-width:660px)" srcset="img/photo-2-tablet.jpg, img/photo-2-tablet@2x.jpg 2x">
 								<img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="picture of user" class="gallery__img">
 							</picture>
 						</div>
@@ -169,7 +173,7 @@
 					<li class="gallery__item">
 						<div class="gallery__img-container">
 							<picture>
-								<source>
+								<source media="(min-width:660px)" srcset="img/photo-3-tablet.jpg, img/photo-3-tablet@2x.jpg 2x">
 								<img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="picture of user" class="gallery__img">
 							</picture>
 						</div>
@@ -193,7 +197,7 @@
 					<li class="gallery__item">
 						<div class="gallery__img-container">
 							<picture>
-								<source>
+								<source media="(min-width:660px)" srcset="img/photo-4-tablet.jpg, img/photo-4-tablet@2x.jpg 2x">
 								<img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="picture of user" class="gallery__img">
 							</picture>
 						</div>
@@ -217,7 +221,7 @@
 					<li class="gallery__item">
 						<div class="gallery__img-container">
 							<picture>
-								<source>
+								<source media="(min-width:660px)" srcset="img/photo-5-tablet.jpg, img/photo-5-tablet@2x.jpg 2x">
 								<img src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="picture of user" class="gallery__img">
 							</picture>
 						</div>
@@ -241,7 +245,7 @@
 					<li class="gallery__item">
 						<div class="gallery__img-container">
 							<picture>
-								<source>
+								<source media="(min-width:660px)" srcset="img/photo-6-tablet.jpg, img/photo-6-tablet@2x.jpg 2x">
 								<img src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="picture of user" class="gallery__img">
 							</picture>
 						</div>
