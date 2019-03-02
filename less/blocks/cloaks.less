@@ -3,3 +3,76 @@
 		display: none;
 	}
 }
+
+//------------------------------------------
+//TABLET;
+@media(min-width:660px) {
+	.cloaks {
+		display: block;
+		background-image: url(../img/cloaks.svg);
+		background-size: 238px 276px;
+		background-repeat: no-repeat;
+		background-position: 21px 59px;
+		list-style: none;
+		position: relative;
+
+		&::before {
+			display: block;
+			content: "";
+			border-radius: 50%;
+			border: 14px solid #d22856;
+			box-sizing: border-box;
+			width: 202px;
+			color: #d22856;
+			height: 202px;
+			position: absolute;
+			left: 39px;
+			top: 114px;
+		}
+
+		&::after {
+			display: block;
+			content: "24";
+			color: #d22856;
+			font-family: @opensans;
+			font-size: 96px;
+			font-weight: 700;
+			line-height: 149.47px;
+			position: absolute;
+			top: 135px;
+			left: 84px;
+		}
+	}
+
+	.cloaks__title {
+		font-family: @opensans;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 36px;
+		text-align: left;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+
+	.cloaks-item {
+		margin-left: 329px;
+		padding-right: 20px;
+	}
+
+	.cloaks__text {
+		margin: 0;
+		padding: 0;
+		font-family: @opensans;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 24px;
+		text-align: left;
+		color: #283645;
+		margin-bottom: 13px;
+	}
+
+	.cloaks__link-more {
+		color: #d22856;
+		text-decoration: underline;
+	}
+}

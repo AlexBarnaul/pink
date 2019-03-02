@@ -124,3 +124,87 @@
 	}
 
 }
+
+//---------------------------------------------
+//TABLET
+@media(min-width:660px) {
+	.tariff {
+		min-height: 377px;
+	}
+
+	.tariff__toggles {
+		display: none;
+	}
+
+	.tariff__inner {
+		display: block;
+		padding-left: 20px;
+		padding-right: 20px;
+		box-sizing: border-box;
+		max-width: 660px;
+	}
+
+	.tariff__table {
+		width: 620px;
+		transform: none;
+		padding-top: 88px;
+	}
+
+	.tariff__table-header {
+		width: 152px;
+		height: 80px;
+
+		&:first-child {
+			display: table-cell;
+			background-color: transparent;
+			outline: none;
+		}
+	}
+
+	.tariff__table-cell {
+		width: 152px;
+		height: 44px;
+		color: #283645;
+		font-family: @opensans;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 30px;
+		padding-left: 15px;
+
+		&:first-child {
+			display: table-cell
+		}
+
+		&::before {
+			display: none;
+
+		}
+	}
+
+	.tariff__feature-filter::after,
+	.tariff__feature-smile::after,
+	.tariff__feature-commentaries::after {
+		right: 61px;
+		top: 12px;
+	}
+
+	.tariff__feature-smile:nth-child(2)::after,
+	.tariff__feature-commentaries:nth-child(2)::after,
+	.tariff__feature-commentaries:nth-child(3)::after {
+		right: 62px;
+		top: 11px;
+	}
+
+	#tariff-btn-3:checked ~ .tariff__table {
+		transform: none;
+	}
+
+	#tariff-btn-2:checked ~ .tariff__table {
+		transform: none;
+	}
+
+	#tariff-btn-1:checked ~ .tariff__table {
+		transform: none;
+	}
+
+}
