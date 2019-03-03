@@ -76,3 +76,53 @@
 		text-decoration: underline;
 	}
 }
+
+//DESKTOP--------------------------------------
+@media(min-width:1200px) {
+	.cloaks {
+		background-size: 298px 345px;
+		background-position: 131px 23px;
+
+		&::before {
+			width: 253px;
+			height: 253px;
+			left: 153px;
+			top: 92px;
+		}
+
+		&::after {
+			top: 137px;
+			left: 211px;
+			font-size: 120px;
+		}
+	}
+
+	.cloaks__title {
+		margin-bottom: 20px;
+
+		& br {
+			display: none;
+		}
+
+	}
+
+	.cloaks-item {
+		margin-left: 0;
+		padding-left: 496px;
+		padding-right: 150px;
+	}
+
+	.cloaks__text {
+		font-size: 18px;
+		line-height: 30px;
+		margin-bottom: 37px;
+	}
+
+	.cloaks__link-more {
+		font-size: 18px;
+		font-family: @opensans;
+		font-weight: 400;
+	}
+
+	.cloaks__item--info {}
+}

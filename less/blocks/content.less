@@ -25,7 +25,7 @@
 	}
 }
 
-
+//TABLET---------------------------------------------------
 @media (min-width:660px) {
 
 	.content::before {
@@ -39,4 +39,22 @@
 	.content--index::before {
 		height: 795px;
 	}
+}
+
+//DESKTOP--------------------------------------------------------
+@media(min-width:1200px) {
+	.content::before {
+		width: 100%;
+		top: -111px;
+		background-image: url(../img/back-desktop.jpg);
+		background-repeat: no-repeat;
+		background-size: 2560px 853px;
+		background-position: center 0;
+		z-index: -1;
+	}
+
+	.content--index::before {
+		height: 854px;
+	}
+
 }
