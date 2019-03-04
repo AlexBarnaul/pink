@@ -1,14 +1,14 @@
 @media (min-width:320px) {
 
 	.footer__links {
-		display: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		padding-bottom: 36px;
 
-		&--photo {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-around;
-			align-items: center;
-			padding-bottom: 36px;
+		&--index {
+			display: none;
 		}
 	}
 
@@ -97,6 +97,11 @@
 		justify-content: space-between;
 		padding-right: 20px;
 		padding-left: 20px;
+		padding-top: 43px;
+
+		&--index {
+			display: flex;
+		}
 	}
 
 	.footer__pink-link {
@@ -114,5 +119,27 @@
 
 	.footer__contacts {
 		padding-bottom: 12px;
+	}
+}
+
+//desktop-------------------------------
+@media(min-width:1200px) {
+	.footer__links {
+		max-width: 939px;
+		margin: 0 auto;
+		padding-top: 60px;
+		padding-bottom: 57px;
+	}
+
+	.footer__developer-box {
+		width: 153px;
+	}
+
+	.footer__developer-box span {
+		font-size: 18px;
+	}
+
+	.footer__socials {
+		margin-right: 0;
 	}
 }

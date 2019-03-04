@@ -86,3 +86,61 @@
 		margin-top: 36px;
 	}
 }
+
+//DESKTOP-------------------------------------------
+@media(min-width:1200px) {
+	.reviews__inner {
+		max-width: 980px;
+		flex-direction: row;
+		justify-content: space-between;
+		padding-top: 97px;
+		background-image: url(../img/quotes.svg);
+		background-repeat: no-repeat;
+		background-size: 79px 63px;
+		background-position: center 0;
+	}
+
+	.reviews__author-name {
+		font-size: 24px;
+		margin-bottom: 4px;
+	}
+
+	.reviews__container {
+		padding: 0 60px;
+
+	}
+
+	.reviews__author-about {
+		font-size: 18px;
+		font-weight: 400;
+		color: #283645;
+		font-family: @opensans;
+	}
+
+	.reviews__toggles {
+		display: none;
+	}
+
+	.reviews__switcher {
+		display: block;
+		min-width: 22px;
+		height: 41px;
+		background-image: url(../img/arrow.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		border: 0;
+		outline: none;
+		background-color: transparent;
+		padding: 0;
+		margin-top: 45px;
+		cursor: pointer;
+
+		&:active {
+			opacity: 0.4;
+		}
+
+		&--next {
+			transform: scaleX(-1);
+		}
+	}
+}
