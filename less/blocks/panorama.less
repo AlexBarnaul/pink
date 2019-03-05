@@ -46,8 +46,19 @@
 	}
 
 	.panorama__img {
-		//		margin: 0 auto;
 		width: 100%;
 		height: auto;
+	}
+}
+
+//desktop-------------------------------------------
+@media(min-width:1200px) {
+	.panorama__photo-container {
+		max-width: 1200px;
+
+		&::before {
+			right: 130px;
+			top: 54px;
+		}
 	}
 }
