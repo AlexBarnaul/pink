@@ -149,6 +149,12 @@
     fill: #fff;
     display: block;
   }
+  .navigation__logo-desktop:hover {
+    fill: #d22856;
+  }
+  .navigation__logo-desktop:active {
+    opacity: 0.3;
+  }
   .star {
     fill: #d22856;
   }
@@ -435,6 +441,12 @@
     top: 27px;
     left: 20px;
     display: block;
+  }
+  .header__pink-logo-tablet:hover {
+    fill: #d22856;
+  }
+  .header__pink-logo-tablet:active {
+    opacity: 0.3;
   }
 }
 @media (min-width: 1200px) {
@@ -896,6 +908,9 @@ TABLET*/
     color: #d22856;
     text-decoration: underline;
   }
+  .cloaks__link-more:active {
+    opacity: 0.3;
+  }
 }
 @media (min-width: 1200px) {
   .cloaks {
@@ -1142,9 +1157,17 @@ TABLET*/
     border: 3px solid #d22856;
     color: #d22856;
     font-size: 18px;
+    cursor: pointer;
   }
   .upload__submit {
     margin-bottom: 12px;
+  }
+  .upload__submit:hover {
+    background-color: #d22856;
+    color: white;
+  }
+  .upload__submit:active {
+    color: #e06889;
   }
   .upload__reset:disabled {
     border: 3px solid #283645;
@@ -1349,6 +1372,12 @@ TABLET*/
     border: 3px solid #fff;
     display: block;
     border-radius: 50%;
+  }
+  .toggles__bullet:hover {
+    background-color: #7e868f;
+  }
+  .toggles__bullet:active {
+    background-color: #eaebec;
   }
   #reviews-btn-1:checked ~ .reviews__toggles .toggles__bullet[for="reviews-btn-1"],
   #reviews-btn-3:checked ~ .reviews__toggles .toggles__bullet[for="reviews-btn-3"],
@@ -1592,6 +1621,7 @@ TABLET*/
     padding: 0 20px;
     order: 1;
     margin-bottom: 19px;
+    cursor: pointer;
   }
   .like__icon {
     fill: #d22856;
@@ -2121,9 +2151,16 @@ TABLET*/
     font-weight: 400;
     line-height: 30px;
     width: 100%;
+    outline: none;
   }
   .input-text--margin-bottom-0 {
     margin-bottom: 0;
+  }
+  .input-text:hover {
+    border: 2px solid #283645;
+  }
+  .input-text:focus {
+    border: 2px solid #d22856;
   }
 }
 @media (min-width: 320px) {
@@ -2262,6 +2299,13 @@ TABLET*/
     margin-top: 5px;
     margin-bottom: 25px;
   }
+  .contacts__item p:hover {
+    color: #283645;
+  }
+  .contacts__item p:active {
+    color: #000;
+    opacity: 0.3;
+  }
 }
 @media (min-width: 660px) {
   .contacts__title {
@@ -2324,6 +2368,13 @@ TABLET*/
     line-height: 45px;
     text-align: center;
   }
+  .socials__link:hover {
+    border: 3px solid #283645;
+  }
+  .socials__link:active {
+    border: 3px solid #eaebec;
+    opacity: 0.3;
+  }
   .socials__icon {
     fill: #d22856;
     vertical-align: middle;
@@ -2340,6 +2391,8 @@ TABLET*/
   .socials__icon--youtube {
     width: 15px;
     height: 13px;
+    padding-left: 4px;
+    padding-bottom: 1px;
   }
 }
 @media (min-width: 320px) {
@@ -2541,6 +2594,12 @@ TABLET*/
     fill: #d22856;
     width: 27px;
     height: 34px;
+  }
+  .footer__developer-icon:hover {
+    fill: #283645;
+  }
+  .footer__developer-icon:active {
+    opacity: 0.3;
   }
   .footer__developer-box {
     display: flex;
